@@ -1,0 +1,25 @@
+﻿<Window x:Class="AppTaller.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppTaller"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Mantedor de Repuestos" HorizontalAlignment="Left" Margin="37,21,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.651,-0.375" FontSize="24"/>
+        <Label Content="Código" HorizontalAlignment="Left" Margin="43,70,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCodigo" HorizontalAlignment="Left" Height="23" Margin="110,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="43,108,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="23" Margin="110,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195"/>
+        <Label Content="Precio" HorizontalAlignment="Left" Margin="43,146,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPrecio" HorizontalAlignment="Left" Height="23" Margin="110,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195"/>
+        <Label Content="Stock" HorizontalAlignment="Left" Margin="43,185,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtStock" HorizontalAlignment="Left" Height="23" Margin="110,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195"/>
+        <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="43,241,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.131,0.708" Click="btnGuardar_Click"/>
+        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="137,241,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.131,0.708" Click="btnEliminar_Click"/>
+        <Button x:Name="btnBuscar" Content="Buscar" HorizontalAlignment="Left" Margin="322,70,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.131,0.708" Click="btnBuscar_Click"/>
+        <DataGrid x:Name="dgRepuestos" HorizontalAlignment="Left" Height="299" Margin="411,69,0,0" VerticalAlignment="Top" Width="373"/>
+
+    </Grid>
+</Window>
